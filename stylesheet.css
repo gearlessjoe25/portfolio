@@ -757,3 +757,34 @@ body {
     background-color: #282828;
     transform: scale(1.05);
 }
+
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto);    /* 2 rows */
+    gap: 10px;                             /* Space between GIFs */
+    width: 100%;
+    max-width: 1200px;                     /* Adjust based on your layout */
+    margin: 0 auto;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 200px;                         /* Set a fixed height for uniformity */
+    object-fit: cover;                     /* Prevents GIFs from stretching weirdly */
+    display: block;
+    border-radius: 4px;                    /* Optional: rounds the corners */
+}
+
+/* Responsive: Stack them on small screens */
+@media (max-width: 768px) {
+    .collage-container {
+        grid-template-columns: repeat(2, 1fr); /* 2x3 on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .collage-container {
+        grid-template-columns: 1fr;            /* 1 column on phones */
+    }
+}
