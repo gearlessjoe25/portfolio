@@ -12,16 +12,98 @@ let dragState = null;
 let resizeState = null;
 
 // ==========================================
-// THEME TOGGLE LOGIC
+// THEME TOGGLE & START MENU LOGIC
 // ==========================================
 const themeToggleBtn = document.getElementById("theme-toggle");
-if(themeToggleBtn) {
+if (themeToggleBtn) {
   themeToggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
   });
 }
 
-function isMobileLayout() { return window.innerWidth <= 1100; }
+const startButton = document.getElementById("start-button");
+const startMenu = document.getElementById("start-menu");
+const showDesktopBtn = document.getElementById("start-menu-show-desktop");
+const startToggleThemeBtn = document.getElementById("start-menu-toggle-theme");
+
+function toggleStartMenu() {
+  if (!startMenu) return;
+  const isOpening = startMenu.classList.contains("is-hidden");
+  startMenu.classList.toggle("is-hidden");
+  if (startButton) {
+    startButton.setAttribute("aria-expanded", isOpening ? "true" : "false");
+  }
+}
+
+function closeStartMenu() {
+  if (startMenu && !startMenu.classList.contains("is-hidden")) {
+    startMenu.classList.add("is-hidden");
+    if (startButton) startButton.setAttribute("aria-expanded", "false");
+  }
+}
+
+if (startButton) {
+  startButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleStartMenu();
+  });
+}
+
+if (startToggleThemeBtn) {
+  startToggleThemeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    closeStartMenu();
+  });
+}
+
+let allWindowsMinimized = false;
+let savedWindowState = [];
+
+if (showDesktopBtn) {
+  showDesktopBtn.addEventListener("click", () => {
+    const openWins = getOpenWindows();
+    if (!allWindowsMinimized && openWins.some(w => !w.classList.contains("is-minimized"))) {
+      savedWindowState = openWins.map(w => ({ el: w, minimized: w.classList.contains("is-minimized") }));
+      openWins.forEach(w => minimizeWindow(w));
+      allWindowsMinimized = true;
+    } else {
+      savedWindowState.forEach(item => {
+        if (!item.minimized) {
+          item.el.classList.remove("is-minimized");
+          item.el.classList.add("is-open");
+        }
+      });
+      allWindowsMinimized = false;
+      const topWin = openWins[openWins.length - 1];
+      if (topWin) bringToFront(topWin);
+    }
+    closeStartMenu();
+  });
+}
+
+// Close start menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (startMenu && !startMenu.classList.contains("is-hidden")) {
+    if (!startMenu.contains(e.target) && e.target !== startButton && !startButton.contains(e.target)) {
+      closeStartMenu();
+    }
+  }
+});
+
+// Escape key listener for Start Menu and Lightbox
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeStartMenu();
+    const lbModal = document.getElementById("lightbox-modal");
+    if (lbModal && !lbModal.classList.contains("is-hidden")) {
+      lbModal.classList.add("is-hidden");
+      const lbImg = document.getElementById("lightbox-img");
+      if (lbImg) setTimeout(() => { lbImg.src = ''; }, 300);
+    }
+  }
+});
+
+function isMobileLayout() { return window.innerWidth <= 768; }
 
 function getOpenWindows() {
   return windows.filter((windowEl) => !windowEl.classList.contains("is-hidden"));
@@ -226,9 +308,16 @@ document.addEventListener("mouseup", () => {
   document.body.classList.remove("is-resizing");
 });
 
-// Button Bindings
-openTriggers.forEach(t => t.onclick = (e) => {
-  if (t.tagName !== "A") { e.preventDefault(); openWindow(t.dataset.open, t.dataset.autoMaximize === "true"); }
+// Button Bindings & Delegation
+document.addEventListener("click", (e) => {
+  const trigger = e.target.closest("[data-open]");
+  if (trigger) {
+    if (trigger.tagName !== "A") {
+      e.preventDefault();
+      openWindow(trigger.dataset.open, trigger.dataset.autoMaximize === "true");
+    }
+    closeStartMenu();
+  }
 });
 closeButtons.forEach(b => b.onclick = () => closeWindow(b.closest(".window")));
 minimizeButtons.forEach(b => b.onclick = () => minimizeWindow(b.closest(".window")));
@@ -449,6 +538,15 @@ function toggleIgMusic() {
   if (!audio) return;
 
   if (audio.paused) {
+    // Cross-pause playground audio
+    const mpAudio = document.getElementById("mp-audio");
+    const mpPlayBtn = document.getElementById("mp-play");
+    const mpVisualizer = document.getElementById("mp-visualizer");
+    if (mpAudio && !mpAudio.paused) {
+      mpAudio.pause();
+      if (mpPlayBtn) mpPlayBtn.textContent = "▶";
+      if (mpVisualizer) mpVisualizer.classList.remove("is-playing");
+    }
     audio.play();
     icon.innerHTML = '⏸';
   } else {
@@ -550,6 +648,13 @@ function updateSmoothProgress() {
 
 function togglePlay() {
   if (audio.paused) {
+    // Cross-pause Instagram audio if active
+    const igAudio = document.getElementById('ig-audio');
+    const igPlayIcon = document.getElementById('ig-music-play-icon');
+    if (igAudio && !igAudio.paused) {
+      igAudio.pause();
+      if (igPlayIcon) igPlayIcon.textContent = "▶";
+    }
     audio.play();
     playBtn.textContent = "⏸";
     visualizer.classList.add("is-playing");

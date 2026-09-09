@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joseph K. Buadoo's Desktop</title>
+  <title>Joseph K. Buadoo | Interactive Designer & Creative Developer</title>
+  <meta name="description" content="Joseph K. Buadoo – Interactive Designer, UI/UX Specialist & Creative Technologist. Explore my interactive OS desktop portfolio featuring mobile prototypes, design systems, and frontend development.">
+  <meta name="author" content="Joseph K. Buadoo">
+  <meta property="og:title" content="Joseph K. Buadoo | Interactive Designer & Creative Developer">
+  <meta property="og:description" content="Interactive desktop portfolio featuring UI/UX prototypes, design systems, and creative projects.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="Icons/About.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,13 +55,17 @@
         <img src="Icons/About.svg" alt="" class="desktop-icon__img">
         <span class="desktop-icon__label">About.exe</span>
       </button>
-      <a href="https://www.linkedin.com/in/jbuadoo/" target="_blank" class="desktop-icon">
+      <button class="desktop-icon" data-open="resume-window">
+        <img src="Icons/Documents.svg" alt="" class="desktop-icon__img">
+        <span class="desktop-icon__label">Resume.doc</span>
+      </button>
+      <a href="https://www.linkedin.com/in/jbuadoo/" target="_blank" rel="noopener noreferrer" class="desktop-icon">
         <img src="Icons/Linkedin.svg" alt="" class="desktop-icon__img">
         <span class="desktop-icon__label">LinkedIn</span>
       </a>
-      <a href="#" target="_blank" class="desktop-icon">
-        <img src="Icons/Documents.svg" alt="" class="desktop-icon__img">
-        <span class="desktop-icon__label">Resume.doc</span>
+      <a href="https://github.com/jbuadoo" target="_blank" rel="noopener noreferrer" class="desktop-icon">
+        <img src="Icons/GitHub.svg" alt="" class="desktop-icon__img">
+        <span class="desktop-icon__label">GitHub</span>
       </a>
     </aside>
 
@@ -88,7 +101,7 @@
         </button>
         <button class="desktop-icon" data-open="baratie-browser" data-auto-maximize="true">
           <img src="Icons/Thebaratie.svg" alt="" class="desktop-icon__img">
-          <span class="desktop-icon__label">The Baratie - Anime Resturaunt Website</span>
+          <span class="desktop-icon__label">The Baratie - Anime Restaurant Website</span>
         </button>
         <button class="desktop-icon" data-open="milestone-rebrand" data-auto-maximize="true">
           <img src="Icons/Soul.svg" alt="" class="desktop-icon__img">
@@ -167,8 +180,9 @@
                 
                 <span class="ig-category">Designer</span>
                 <p class="ig-bio-text">
-                  Hey, my name is Joseph Buadoo, and clearly based off my portfolio, I love picking up new things 😂. Being creative in new ways has been my life's moto from a young age, and I believe that's what's needed in design today. I love combining things ti create whole new possibilities whiles pushing uniqueness. Instead of following the stays quo, how will we know what'll work unless we try? Enjoy browsing through my personal computer whiles a push the boundaries of what modern design truly is.
-                  -"People who say it cannot be done should not speak for those who are doing it"
+                  Hey, my name is Joseph Buadoo, and clearly based off my portfolio, I love picking up new things 😂. Being creative in new ways has been my life's motto from a young age, and I believe that's what's needed in design today. I love combining things to create whole new possibilities while pushing uniqueness. Instead of following the status quo, how will we know what'll work unless we try? Enjoy browsing through my personal computer while I push the boundaries of what modern design truly is.
+                  <br><br>
+                  <em>&ldquo;People who say it cannot be done should not speak for those who are doing it.&rdquo;</em>
                 </p>
 
                 <div class="ig-profile-music" onclick="toggleIgMusic()">
@@ -267,7 +281,12 @@
 
         <button class="desktop-icon" data-open="image-viewer-6" data-auto-maximize="true">
           <img src="Images/Shading2.jpg" alt="Gallery Image 6" class="gallery-thumbnail">
-          <span class="desktop-icon__label">Shading_Practice1.jpg</span>
+          <span class="desktop-icon__label">Shading_Practice2.jpg</span>
+        </button>
+
+        <button class="desktop-icon" data-open="image-viewer-7" data-auto-maximize="true">
+          <img src="Images/Perspective.jpg" alt="Gallery Image 7" class="gallery-thumbnail">
+          <span class="desktop-icon__label">Perspective.jpg</span>
         </button>
 
       </div>
@@ -293,7 +312,7 @@
 
           <h1 class="app-hero__title">Tap In: A music promotion<br>and discovery platform</h1>
           <p class="app-hero__subtitle" style="max-width: 800px;">
-            Music is growing in unique ways, and that growth has no where to flourish. "Tap In" is a music promotion & discussion platform that can help artists grown their platforms whiles helping listeners find new music and artists. As the visonary behind the platform, I wanted to blend older design styles with a modern flare. This was a class project for Interaction Design II, where I led a group of 3 other individuals to create a working prototype, using the Lean UX process. This project spanned from January 2026 to April 2026, using Figjam and Figma for research and building.
+            Music is growing in unique ways, yet emerging talent often struggles to find dedicated room to flourish. "Tap In" is a music promotion &amp; discussion platform designed to help artists grow their presence while empowering listeners to discover fresh sounds. As the visionary behind the platform, I blended retro OS aesthetics with modern design systems. This was a semester project for Interaction Design II, where I led a team of three to build an interactive prototype using Lean UX methodology, leveraging FigJam and Figma for research, user flows, and interface design.
           </p>
           
           <div class="app-hero__Timeframe">
@@ -305,7 +324,7 @@
           
           <span class="nav-dot">&bull;</span>
           
-          <a href="YOUR_SHOWCASE_LINK_HERE" target="_blank">Showcase</a>
+          <button type="button" class="nav-link-btn" data-open="tap-in-prototype" data-auto-maximize="true">Prototype</button>
         </nav>
 
           <div class="app-hero__phones" style="margin-top: 40px; margin-bottom: 60px;">
@@ -318,12 +337,12 @@
         <section class="app-benefits" style="padding-top: 20px; padding-bottom: 20px;">
           <div class="case-study-block">
             <h2>The Problem:</h2>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Like mentioned earlier, the music industry needs a place to grow, and it lacks a dedicated space to do so.</p>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">The modern music industry lacks a dedicated, unified space for organic grassroots discovery and authentic community engagement.</p>
             <ul>
-              <li>Growth is difficult in the music industry, especially now in the digital age.</li>
-              <li>Everyone finds new music in unique ways, but it's not a consistent process.</li>
-              <li>Artists and fans go elsewhere to build communities in spaces that wasn't specifically made for them.</li>
-              <li>It's hard for artists and those who want to start to get the connections they need to create more work.</li>
+              <li>Growth is increasingly difficult for independent artists in an oversaturated streaming landscape.</li>
+              <li>Music discovery feels fractured across algorithms that prioritize viral hits over personal resonance.</li>
+              <li>Artists and fans are forced onto fragmented general-purpose social platforms not tailored to music creators.</li>
+              <li>Aspiring creatives struggle to find the collaborative networking channels needed to produce new work.</li>
             </ul>
           </div>
         </section>
@@ -342,7 +361,7 @@
                 <span class="benefit-icon-small">🌟</span>
                 <h3>Spotlight</h3>
               </div>
-              <p>Created a way for artists to promote their music with fair chance at exposure, whiles listeners can find new artists, songs and genres, being mutually beneficial for both parties.</p>
+              <p>Provides artists with equitable exposure opportunities, while helping listeners discover new artists, tracks, and genres—delivering mutual value to creators and fans alike.</p>
             </div>
 
             <div class="solution-card">
@@ -353,7 +372,7 @@
                 <span class="benefit-icon-small">🔀</span>
                 <h3>Randomization</h3>
               </div>
-              <p>Discoverability goes further with randomized suggestions, making the process enjoyable, whiles still promoting artists and their music.</p>
+              <p>Deepens discoverability through randomized track suggestions, turning sonic exploration into an engaging, gamified journey while elevating under-the-radar songs.</p>
             </div>
 
             <div class="solution-card">
@@ -364,7 +383,7 @@
                 <span class="benefit-icon-small">🤝</span>
                 <h3>Connecting</h3>
               </div>
-              <p>Helping creatives connect with each other for collabs, work, or help with communication features.</p>
+              <p>Facilitates direct creative networking for collaborations, studio sessions, and feedback through streamlined messaging tools.</p>
             </div>
 
             <div class="solution-card">
@@ -375,7 +394,7 @@
                 <span class="benefit-icon-small">💬</span>
                 <h3>Discussions</h3>
               </div>
-              <p>Housing music enthusiast in a place dedicated for them to them to discuss with others about music, with also having integrated tools just for them.</p>
+              <p>Gives music enthusiasts a purpose-built hub to share reviews, track breakdowns, and playlists with contextual listening tools.</p>
             </div>
 
             <div class="solution-card">
@@ -386,7 +405,7 @@
                 <span class="benefit-icon-small">🌍</span>
                 <h3>Community</h3>
               </div>
-              <p>Giving users a chance to build community with others in a space that is meant for them, especially with the removable of Twitter communities, which was where many music enthusiast use for this need.</p>
+              <p>Empowers fans to form genre-based sub-communities and fan spaces, filling the void left by fragmented mainstream social groups.</p>
             </div>
 
           </div>
@@ -396,11 +415,11 @@
           <div class="case-study-block">
             <h2>Lessons Learned:</h2>
             <ul>
-              <li>As team leader, I learned a lot with what comes with management. Delegation of tasks is important, and it's also important to build upon teammates strengths.</li>
-              <li>With the timeframe of this project, scaling down on the prototype had to be done, but it's not the end of the world. This was a disappointing aspect for me at first, but I'm still proud of everything that got done.</li>
-              <li>With interviews and usability tests, every participant is different. These interviews and tests taught me how to fish for information we need, without explicitly asking. I've conducted many before this project, but this was the most I've ever had for a project. By the last few, I realized my process wasn't the best, and was giving us feedback that varied on how helpful it was. By the end, I readjusted, and we got the best information back we got the whole semester.</li>
-              <li>I wanted to go beyond my previous projects and add a lot more animations. I'm the type to learn by just messing around on a software, and with reptation. I still need to work on file hygiene, but I've developed a lot more skills in terms of creating unique interactions and animations.</li>
-              <li>It's okay to take a pause or a break. I do music production and it's commonly practiced to get up and revisit later. The end product is better, and this can be applied to creating work in general. I had a habit of sitting on the file until I finish what I sought out to do for the day. This caused fatigue, and I had to learn to step away.</li>
+              <li>As team lead, I learned what genuine project management requires: clear delegation, open communication, and aligning responsibilities with each teammate's core strengths.</li>
+              <li>Working within fixed semester deadlines necessitated smart MVP scoping. Learning to scale back features gracefully taught me how to protect product quality without sacrificing the core vision.</li>
+              <li>Conducting user interviews and usability tests reinforced the value of observational research. Asking open-ended prompts rather than leading questions unlocked our most valuable usability breakthroughs.</li>
+              <li>Pushed myself to incorporate rich micro-interactions and animations, reinforcing my mastery of Figma components, variants, and interactive states.</li>
+              <li>Embraced iterative rest. Just as in music production where taking a step back improves mixing decisions, taking breaks prevents creative burnout and leads to far sharper design outputs.</li>
             </ul>
           </div>
         </section>
@@ -564,10 +583,10 @@
           <div class="case-study-block">
             <h2>Lessons Learned:</h2>
             <ul>
-              <li>Spring 2026 was easily the most mentally taxing semester of my life (and I did architecture, so that's saying something). Whiles being apart of the Mixr group, I was leading a group for another prototype called Tap In, I was building my portfolio, doing various other projects in Visual Design II, then my other classes. I had to learn how to balance projects, or else I would of sank. At first, I was prioritizing other projects over another, but I found a way to balance the work, and give all my projects the attention that they needed.</li>
-              <li>Every team is different, and I've heard that it sucks having a really good team because you'll always compare your future teams to them. With all the teams I've been apart of, I had to learn how to adjust to a new environment and dynamic. Just like snowflakes, every team is different and unique in it's own regard.</li>
-              <li>I like to know what I'm doing and what is needed from me. This class however didn't give me such luxury. This pushed me to be proactive and be more on top of things since we weren't give a clear process to follow. The team knew the end goal, and we had to work together to find a way to make it there.</li>
-              <li>Flexibility is not a foreign skills of mine, but this project was a nice reminder of that. Things change constantly in life, and you need to be able to readjust to keep the train moving.</li>
+              <li>Spring 2026 was one of the most demanding semesters of my academic career. While collaborating on Mixr, I was also leading the Tap In prototype team, curating this portfolio, and juggling studio work in Visual Design II. I learned how to prioritize effectively, maintain deep focus, and balance parallel workstreams to give every project the rigor it deserved.</li>
+              <li>Every design team brings a distinct dynamic. Adapting to new collaboration styles across different teams taught me how to communicate with empathy, actively listen, and harmonize distinct perspectives into unified design choices.</li>
+              <li>Navigating ambiguity was a key milestone. Rather than waiting for strict direction, our team embraced autonomy, using user feedback and goal-directed milestones to pave our own roadmap to a successful final prototype.</li>
+              <li>Flexibility is an essential design asset. Constraints and scopes shift constantly in product development, and the ability to pivot decisively kept our momentum steady from kickoff to showcase.</li>
             </ul>
           </div>
         </section>
@@ -618,7 +637,7 @@
         <section class="app-hero">
           <h1 class="app-hero__title">Reel: A Movie and Show discussion<br>rival for Letterboxd</h1>
           <p class="app-hero__subtitle" style="max-width: 800px;">
-            Letterboxd is the go to movie review platform, and we think that should change. Reel is a team made mobile prototype that pushed us to create a movie and TV show reviewing prototype to challenge Letterboxd. We followed the Goal-Directed Design method to conduct research, user interviews, and usability testing to bring this platform to life. This project spanned from August 2025 to November 2025, using Figjam and Figma for research and building.
+            Letterboxd is the go-to movie review platform, but television and anime fans are often left underserved. Reel is a collaborative mobile prototype designed to challenge conventions in film and TV discussion. We followed Goal-Directed Design methodology, conducting in-depth user interviews, competitive analysis, and usability testing to craft an inclusive community space. This project spanned from August 2025 to November 2025, utilizing FigJam and Figma.
           </p>
           
           <div class="app-hero__Timeframe">
@@ -630,7 +649,7 @@
           
           <span class="nav-dot">&bull;</span>
           
-          <button type="button" class="nav-link-btn" data-open="reel-prototype" data-auto-maximize="true">Reel Website Rebrand
+          <button type="button" class="nav-link-btn" data-open="reel-prototype" data-auto-maximize="true">Reel Website Rebrand</button>
         </nav>
 
           <div class="app-hero__phones" style="margin-top: 40px; margin-bottom: 60px;">
@@ -643,11 +662,11 @@
         <section class="app-benefits" style="padding-top: 20px; padding-bottom: 20px;">
           <div class="case-study-block">
             <h2>The Problem:</h2>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Our focus derived from fixing and building upon the issues our biggest competitors have.</p>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Our focus centered on identifying and solving the friction points prevalent across incumbent review platforms.</p>
             <ul>
-              <li>These platforms often target movies alone, leaving the world of shows neglected.</li>
-              <li>Letterboxd isn't new user friendly, and has a dated UI/aesthetic.</li>
-              <li>As a discussion platform, Letterboxd is limited in social engagement.</li>
+              <li>Existing platforms focus almost exclusively on feature films, leaving television series and episodic storytelling neglected.</li>
+              <li>Letterboxd poses a steep learning curve for casual users and relies on a dated interface hierarchy.</li>
+              <li>As a review platform, Letterboxd offers limited real-time social engagement and community discussion features.</li>
             </ul>
           </div>
         </section>
@@ -666,7 +685,7 @@
                 <span class="benefit-icon-small">📺</span>
                 <h3>Inclusion</h3>
               </div>
-              <p>A general feed with movies and shows, going beyond that with specifics like anime, which is something Letterboxd neglects.</p>
+              <p>A unified feed celebrating films, TV shows, and anime series alike, bridging gaps left by single-medium competitors.</p>
             </div>
 
             <div class="solution-card">
@@ -677,7 +696,7 @@
                 <span class="benefit-icon-small">✨</span>
                 <h3>Clean UI</h3>
               </div>
-              <p>Simplified for learnability sake with straight to the point information and extra useful content.</p>
+              <p>Streamlined layout engineered for immediate learnability, prioritizing direct ratings, cast notes, and episode guides.</p>
             </div>
 
             <div class="solution-card">
@@ -688,7 +707,7 @@
                 <span class="benefit-icon-small">💬</span>
                 <h3>Discussions</h3>
               </div>
-              <p>More discussion features that match universal social media structures.</p>
+              <p>Rich conversational threads and spoiler-shielded replies matching familiar, modern social interaction patterns.</p>
             </div>
 
             <div class="solution-card">
@@ -699,7 +718,7 @@
                 <span class="benefit-icon-small">🔍</span>
                 <h3>Discoverability</h3>
               </div>
-              <p>Beyond movie suggestions, Reel shows upcoming content with where they'll release. This is the type of information that users go elsewhere to find.</p>
+              <p>Curated release schedules displaying exact premiere dates and streaming platform availability in one place.</p>
             </div>
 
           </div>
@@ -709,10 +728,10 @@
           <div class="case-study-block">
             <h2>Lessons Learned:</h2>
             <ul>
-              <li>For this project, I was just a team member. I'm used to being the leader or having to take charge, so this team taught me to be a team player which I enjoyed. Communication is key. Bouncing off ideas, helping others, and learning to accept that not everyone will see your vision.</li>
-              <li>Variables should be set up before getting deep into the project! I wanted to add a theme change, but this was a late addition. Adding variables to components and frames towards the end was a pain. This also resulted in me missing a few spots.</li>
-              <li>Taking notes for tasks is essential. I love making lists, but this project taught me how important it is to make sure everything it jotted down. My schedule was packed, and as a group, we forgot some key features we wanted until the very end, which resulted in a rush to implement them.</li>
-              <li>As my childhood idol Sensei Wu would say, "Never put off until tomorrow what can be done today". Naming frames, keeping the file clean, and more house keeping things is important. I'd often do those things later since I enjoy designing and building. To my horror, tiny things stack up, and it gets more stressful to clean up with a deadline steadily approaching.</li>
+              <li>Stepped into the role of a dedicated team collaborator. Bouncing ideas off teammates and navigating conflicting creative viewpoints sharpened my active listening and design consensus skills.</li>
+              <li>Design tokens and variables should be established on day one. Introducing dark mode late in the lifecycle demonstrated why a solid foundation saves massive refactoring effort later on.</li>
+              <li>Documentation is paramount. Keeping detailed sprint backlogs ensures that high-impact features are accounted for early rather than rushed at final delivery.</li>
+              <li>File hygiene matters: naming frames, maintaining autolayout rules, and keeping asset libraries organized prevents compounding technical debt as deadlines approach.</li>
             </ul>
           </div>
         </section>
@@ -788,7 +807,7 @@
         <section class="app-hero">
           <h1 class="app-hero__title">Milestone Comics Rebrand<br></h1>
           <p class="app-hero__subtitle" style="max-width: 800px;">
-            Milestone Media was made 1993 by black creatives to fight the issue of exclusion of black characters in comic book media. Static, Icon, Rocket, and Hardware are among the vast cast created by Milestone Media. The company later merged with the DC Universe in 2008. After 18 years later, these legend are back again in the DU Universe, and the brand needs a major revamp. For this project, I was tasked with creating 3 deliverables which were rebranding their website, creating a new character/series, and creating a variant cover for the "New History of the DC Universe: The Dakota Incident" story. I used Figma, photoshop, and Paint.net to create these 3 deliverables.
+            Milestone Media was founded in 1993 by Black creatives to address the exclusion of Black characters and storytellers in mainstream comic books. Static, Icon, Rocket, and Hardware are among the iconic heroes created by Milestone Media. The company later merged into the DC Universe in 2008. Over 18 years later, these legends returned to the DC continuity, and the brand called for a major revamp. For this project, I created three core deliverables: rebranding their web presence, designing an original character and comic series (SOUL), and illustrating a variant cover for the &ldquo;New History of the DC Universe: The Dakota Incident&rdquo; event using Figma, Photoshop, and Paint.net.
           </p>
           
           <div class="app-hero__Timeframe">
@@ -805,7 +824,7 @@
 <section class="app-benefits" style="padding-top: 20px; padding-bottom: 20px;">
           <div class="milestone-block">
             <h2>Milestone Media Website Rebrand</h2>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">For a comic book companies website, it felt very newspaper press themed. Keeping the the white, black, and red color scheme, with the comic panel collage background, I made a design theg evokes a Rebirth feel. The characters look like they're jumping out of the pages in the background whiles the whole site reads like a fun comic book.</p>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">For a comic publisher&rsquo;s website, the original felt heavily tied to standard newsprint. Preserving the signature white, black, and red color scheme alongside comic panel collages, I built a fresh interface evoking a true &ldquo;Rebirth&rdquo; feel. Heroes break through dynamic panels while the responsive layout reads with the energy and rhythm of a comic book.</p>
             
             <div class="milestone-compare-grid">
                   <span class="compare-label">Old Design</span>              
@@ -843,12 +862,12 @@
             <div class="milestone-split-layout">
               <div class="milestone-split-text">
                 <h2>Soul: A New Milestone Series</h2>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Milestone has a lot of black culture in it, but as someone from Ghana, I felt like they were missing foreign black culture in their roster. That what inspired SOUL.</p>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">SOUL is about a young African American teen name Benjamin Boateng (Benji for short) who's family hails from West Africa. After an intense moment of emotional distress, he awaken laten abilities, granting him to see and move beyond his human limitations. With these new abilities, the world has become much bigger to him, but more dangerous as well. He soon realizes that the ones he hold close to him aren't all pure souls like he thought.</p>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Milestone champions Black culture, but as someone with heritage from Ghana, I felt West African cultural influences were underrepresented in the roster. That became the genesis of SOUL.</p>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">SOUL centers on Benjamin Boateng (&ldquo;Benji&rdquo;), a young teen whose family hails from West Africa. Following an intense emotional catalyst, Benji awakens latent spiritual abilities granting heightened perception and kinetic movement beyond standard physical limits. As his perception of the world expands, he quickly discovers that not all spirits and individuals surrounding him are as benevolent as they appear.</p>
             <ul>
-                  <li>When I hear the word soul, I think of ones true self and expression, so the design is Benji's silhouette with extrusion showing who he really is inside. </li>
-                  <li>After redesigning the Milestone site, the color red was still hovering in my mind, so I included it to keep brand synergy. </li>
-                  <li>The major selling point of SOUL is it's foreign cultural aspects which Milestone is missing. I tried to give the sense of African culture with the line art within Benji's silhouette, which is his soul.</li>
+                  <li>When envisioning &ldquo;soul,&rdquo; I think of internal authenticity and raw expression; the visual concept frames Benji&rsquo;s silhouette with luminous internal energy showing who he is within.</li>
+                  <li>Carrying over the sharp red accent color maintains strong brand synergy with the wider Milestone Universe.</li>
+                  <li>Intricate West African cultural line art within the silhouette celebrates continental heritage, weaving identity directly into his heroic visual design.</li>
                 </ul>
               </div>
               
@@ -864,12 +883,12 @@
           <div class="milestone-block">
             <div class="milestone-split-layout">
               <div class="milestone-split-text">
-            <h2>"New History of the DC Universe: The Dakota Incident" Variant Cover</h2>
-            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">During Black History Month, DC tends to remember their elite cast of black characters and finally give them some story (The last Black led ongoing series at DC ended in 2023, and they haven't made a new one since). During February 2026, I started seeing promotion for this crossover/merger of Milestone and DC, therefore, I created a variant cover as an ad and promotion for the event.</p>
+            <h2>&ldquo;New History of the DC Universe: The Dakota Incident&rdquo; Variant Cover</h2>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">To celebrate the Milestone and DC crossover, I designed a collector-grade variant cover highlighting the core heroes uniting against new threats.</p>
             <ul>
-              <li>BLANK</li>
-              <li>BLANK</li>
-              <li>BLANK</li>
+              <li>[Content to be added]</li>
+              <li>[Content to be added]</li>
+              <li>[Content to be added]</li>
             </ul>
           </div>
                   <div class="milestone-split-image">
@@ -883,15 +902,15 @@
 <section class="app-benefits" style="padding-top: 20px; padding-bottom: 20px;">
           <div class="milestone-block">
             <h2>The Process:</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 20px;"></p>
+            <p style="font-size: 1.1rem; margin-bottom: 20px; color: #a0a0a0;">Documenting the journey from conceptual pencil thumbnails to finished digital assets.</p>
             <ul>
-              <li>BLANK</li>
-              <li>BLANK</li>
-              <li>BLANK</li>
+              <li>[Content to be added]</li>
+              <li>[Content to be added]</li>
+              <li>[Content to be added]</li>
             </ul>
             
             <div class="milestone-bottom-image">
-              <img src="Images/Process_Image.png" alt="The Process" class="clickable-image" data-full-src="Images/Process_Image.png">
+              <img src="Images/Process_Image.png" onerror="this.onerror=null; this.src='Images/MS_Background.png'; this.setAttribute('data-full-src', 'Images/MS_Background.png');" alt="The Process" class="clickable-image" data-full-src="Images/Process_Image.png">
             </div>
 
           </div>
@@ -928,11 +947,11 @@
           
           <div class="dark-viewer__meta">
             <span class="meta-label">Date Created:</span> 
-            <span class="meta-value">Feburary 2026</span> </div>
+            <span class="meta-value">February 2026</span> </div>
           
           <div class="dark-viewer__description">
             <h3>Typeface Assignment Visual Design II</h3>
-            <p>This piece kept evolving as I worked on it, incorporating more ideas that I initially thought wouldn’t work. Instead of focusing on one specific Greek style, focusing on multiple helped will up my page which was an initial worry that I thought I’d struggle doing. Using a grid for structure, contrast of designs, and asymmetry for the man made element, I designed this to bring the old weathered Greek look to mind.</p>
+            <p>This piece kept evolving as I worked on it, incorporating more ideas that I initially thought wouldn’t work. Instead of focusing on one specific Greek style, focusing on multiple helped fill up my page which was an initial worry that I thought I’d struggle doing. Using a grid for structure, contrast of designs, and asymmetry for the man made element, I designed this to bring the old weathered Greek look to mind.</p>
           </div>
           
         </div>
@@ -1012,7 +1031,7 @@
           
           <div class="dark-viewer__description">
             <h3>Music Covers</h3>
-            <p>These are a few music covers I made through various adobe softwares. Each cover encapsulates the feel an thematic value of the song attached to it.</p>
+            <p>These are a few music covers I made through various Adobe software tools. Each cover encapsulates the feel and thematic value of the song attached to it.</p>
           </div>
           
         </div>
@@ -1048,7 +1067,7 @@
           </div>
           <div class="dark-viewer__description">
             <h3>Drawing I • Spheres</h3>
-            <p></p>
+            <p>A study in light, shadow, and continuous gradient rendering. Explores volumetric form through pencil rendering on tonal paper, focusing on core shadow, reflected light, and specular highlights.</p>
           </div>
         </div>
       </div>
@@ -1083,7 +1102,7 @@
           </div>
           <div class="dark-viewer__description">
             <h3>Drawing I • Shading Practice 1</h3>
-            <p></p>
+            <p>Foundation drawing exercise concentrating on value transitions, edge control, and surface texture across geometric planar solids.</p>
           </div>
         </div>
       </div>
@@ -1118,7 +1137,42 @@
           </div>
           <div class="dark-viewer__description">
             <h3>Drawing I • Shading Practice 2</h3>
-            <p></p>
+            <p>Continuation of tonal shading studies, examining cross-hatching densities, light source consistency, and atmospheric depth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window is-hidden" id="image-viewer-7" data-title="Perspective.jpg" data-icon="app">
+      <header class="window__titlebar">
+        <div class="window__title">
+          <span style="margin-right: 8px; font-size: 14px;">🖼️</span>
+          <span>Perspective.jpg</span>
+        </div>
+        <div class="window__controls">
+          <button type="button" class="window__control window__control--min" data-minimize></button>
+          <button type="button" class="window__control window__control--max" data-maximize></button>
+          <button type="button" class="window__control window__control--close" data-close></button>
+        </div>
+      </header>
+      
+      <div class="window__content dark-image-viewer">
+        <div class="dark-viewer__img-container">
+          <img src="Images/Perspective.jpg" alt="Perspective Drawing">
+        </div>
+        
+        <div class="dark-viewer__details">
+          <div class="dark-viewer__meta">
+            <span class="meta-label">File Name:</span> 
+            <span class="meta-value">Perspective.jpg</span>
+          </div>
+          <div class="dark-viewer__meta">
+            <span class="meta-label">Date Created:</span> 
+            <span class="meta-value">2025</span> 
+          </div>
+          <div class="dark-viewer__description">
+            <h3>Studio I • Two-Point Architectural Perspective</h3>
+            <p>Linear two-point perspective exterior study examining massing, structural cantilevers, vanishing point convergence, and architectural spatial proportion.</p>
           </div>
         </div>
       </div>
@@ -1143,7 +1197,7 @@
         <section class="app-hero">
           <h1 class="app-hero__title">Welcome to CJC Music</h1>
           <p class="app-hero__subtitle" style="max-width: 800px;">
-            For this project, CJC Music is a site made for the music brand I made with my friends. I was tasked with implementing uses of JavaScript and to push our skills further with parallax scrolling.
+            CJC Music is a dedicated digital platform created for an independent music brand co-founded with creative peers. The project focused on architecting responsive layouts, creating interactive JavaScript audio controls, and pushing dynamic visual depth through parallax scrolling techniques.
           </p>
           
           <div class="app-hero__Timeframe">
@@ -1151,7 +1205,7 @@
           </div>
 
         <nav class="app-footer-nav">
-          <a href="https://jbuadoo.github.io/CJC-Music/" target="_blank">Visit CJC</a>
+          <a href="https://jbuadoo.github.io/CJC-Music/" target="_blank" rel="noopener noreferrer">Visit CJC Live</a>
         </nav>
 
 <div class="app-hero__phones" style="margin-top: 40px; margin-bottom: 60px;">
@@ -1163,11 +1217,21 @@
           <div class="case-study-block">
             <h2>The Tasks:</h2>
             <ul>
-              <li>Unique Java Script functions</li>
-              <li>Java Script hamburger menu</li>
-              <li>Mobile and Desktop views</li>
-              <li>Parallax scrolling</li>
+              <li>Custom JavaScript interactive functions</li>
+              <li>Responsive JavaScript navigation &amp; hamburger menu</li>
+              <li>Fluid mobile and desktop breakpoints</li>
+              <li>Multi-layer parallax scrolling</li>
             </ul>
+          </div>
+        </section>
+
+        <section class="app-benefits" style="padding-top: 20px; padding-bottom: 20px;">
+          <div class="case-study-block">
+            <h2>Brand Identity &amp; Design System:</h2>
+            <p style="color: #a0a0a0; font-size: 1.1rem; margin-bottom: 20px;">Visual Design I study defining the turntable-inspired CJC logomark, typography scale, iconography, and monochromatic color palette.</p>
+            <div style="text-align: center; margin-top: 15px;">
+              <img src="Images/Brand_Assignment.png" alt="CJC Music Brand Identity System" class="clickable-image" data-full-src="Images/Brand_Assignment.png" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+            </div>
           </div>
         </section>
 
@@ -1178,24 +1242,24 @@
             
             <div class="solution-card">
               <div class="solution-card__img-slot">
-                <img src="Images/CJC_Anim.gif" alt="Animated background graphic" class="clickable-image" data-full-src="Images/CJC_Anim_Full.png">
+                <img src="Images/CJC_Anim.gif" onerror="this.onerror=null; this.src='Images/CJC_Home.png'; this.setAttribute('data-full-src', 'Images/CJC_Home.png');" alt="Animated background graphic" class="clickable-image" data-full-src="Images/CJC_Anim.gif">
               </div>
               <div class="solution-card__header">
                 <span class="benefit-icon-small">✨</span>
                 <h3>Animated JS background</h3>
               </div>
-              <p>Implemented a dynamic background using JavaScript to create a more engaging, visually active environment for the user.</p>
+              <p>Implemented a dynamic canvas-driven background using JavaScript to create a visually engaging, active atmosphere.</p>
             </div>
 
             <div class="solution-card">
               <div class="solution-card__img-slot">
-                <img src="Images/CJC_Menu.gif" alt="Menu graphic" class="clickable-image" data-full-src="Images/CJC_Menu_Full.png">
+                <img src="Images/CJC_Menu.gif" onerror="this.onerror=null; this.src='Images/CJC_Home.png'; this.setAttribute('data-full-src', 'Images/CJC_Home.png');" alt="Menu graphic" class="clickable-image" data-full-src="Images/CJC_Menu.gif">
               </div>
               <div class="solution-card__header">
                 <span class="benefit-icon-small">🍔</span>
                 <h3>JS Menu</h3>
               </div>
-              <p>Built a custom JavaScript hamburger menu from scratch to ensure smooth navigation across all devices.</p>
+              <p>Built a custom JavaScript hamburger menu from scratch ensuring smooth, accessible transitions across all viewports.</p>
             </div>
 
             <div class="solution-card">
@@ -1206,29 +1270,29 @@
                 <span class="benefit-icon-small">📱</span>
                 <h3>Mobile View</h3>
               </div>
-              <p>Ensured the site is fully responsive, looking and functioning perfectly whether viewed on a desktop monitor or a smartphone screen.</p>
+              <p>Engineered responsive media queries ensuring optimal hierarchy and tap targets whether on mobile or widescreen monitors.</p>
             </div>
 
             <div class="solution-card">
               <div class="solution-card__img-slot">
-                <img src="Images/CJC_Parallax.png" alt="Parallax graphic" class="clickable-image" data-full-src="Images/CJC_Parallax_Full.png">
+                <img src="Images/CJC_Parallax.png" onerror="this.onerror=null; this.src='Images/CJC_Home.png'; this.setAttribute('data-full-src', 'Images/CJC_Home.png');" alt="Parallax graphic" class="clickable-image" data-full-src="Images/CJC_Parallax.png">
               </div>
               <div class="solution-card__header">
                 <span class="benefit-icon-small">↕️</span>
                 <h3>Parallax Scrolling</h3>
               </div>
-              <p>Utilized parallax scrolling techniques to give the site depth, making foreground and background elements move at varying speeds.</p>
+              <p>Applied scroll-linked parallax transformations giving depth and motion as users explore releases and artist rosters.</p>
             </div>
 
             <div class="solution-card">
               <div class="solution-card__img-slot">
-                <img src="Images/CJC_Player.png" alt="Music player graphic" class="clickable-image" data-full-src="Images/CJC_Player_Full.png">
+                <img src="Images/CJC_Player.png" onerror="this.onerror=null; this.src='Images/CJC_Home.png'; this.setAttribute('data-full-src', 'Images/CJC_Home.png');" alt="Music player graphic" class="clickable-image" data-full-src="Images/CJC_Player.png">
               </div>
               <div class="solution-card__header">
                 <span class="benefit-icon-small">🎵</span>
                 <h3>Music Player</h3>
               </div>
-              <p>Developed a standalone interactive music player allowing users to sample the brand's tracks directly on the site.</p>
+              <p>Developed an interactive audio player component allowing prospective listeners to preview tracks directly on the site.</p>
             </div>
 
           </div>
@@ -1261,7 +1325,7 @@
         <section class="app-hero">
           <h1 class="app-hero__title">Welcome to The Baratie</h1>
           <p class="app-hero__subtitle" style="max-width: 800px;">
-            For this project, we had to make a site of our choosing from the templates on Bootstrap. For a colorful design, I decided to make a site for the fictional restaurant The Baratie from One Piece. This taught introduced me to the world of online resources dedicated to coders. Past that, this developed my skills by having me dive into the code to transform a serious realistic website template into a whimsical site for The Baratie.
+            For this project, we built a fully customized responsive site using Bootstrap foundation components. Drawing inspiration from One Piece, I transformed standard corporate templates into a vibrant, whimsical experience for the iconic ocean restaurant The Baratie. This project introduced me to web framework customization, responsive utility classes, and translating anime iconography into interactive UI elements.
           </p>
           
           <div class="app-hero__Timeframe">
@@ -1269,7 +1333,7 @@
           </div>
 
         <nav class="app-footer-nav">
-          <a href="https://jbuadoo.github.io/The-Baratie/" target="_blank">Visit The Baratie</a>
+          <a href="https://jbuadoo.github.io/The-Baratie/" target="_blank" rel="noopener noreferrer">Visit The Baratie Live</a>
         </nav>
 
           <div class="app-hero__phones" style="margin-top: 40px; margin-bottom: 60px;">
@@ -1337,17 +1401,258 @@
 
         </main>
       </div>
+    <section class="window is-hidden" id="resume-window" data-title="Resume.doc" data-icon="app" style="--left: 12%; --top: 6%; --width: 860px; height: 82vh; z-index: 25;">
+      <header class="window__titlebar">
+        <div class="window__title">
+          <img src="Icons/Documents.svg" alt="" class="title-icon-img">
+          <span>Resume.doc - Joseph Buadoo</span>
+        </div>
+        <div class="window__controls">
+          <button type="button" class="window__control window__control--min" data-minimize title="Minimize"></button>
+          <button type="button" class="window__control window__control--max" data-maximize title="Maximize/Restore"></button>
+          <button type="button" class="window__control window__control--close" data-close title="Close"></button>
+        </div>
+      </header>
+      
+      <div class="resume-toolbar">
+        <button type="button" class="resume-tool-btn" id="resume-print-btn" onclick="window.print()">
+          <span>🖨️</span> Print / Save PDF
+        </button>
+        <a href="mailto:jrkwekub@gmail.com" class="resume-tool-btn">
+          <span>✉️</span> Email Joseph
+        </a>
+        <a href="https://www.linkedin.com/in/jbuadoo/" target="_blank" rel="noopener noreferrer" class="resume-tool-btn">
+          <span>🔗</span> LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="window__content resume-content-wrapper">
+        <article class="resume-sheet">
+          <header class="resume-header">
+            <h1 class="resume-name">Joseph Buadoo</h1>
+            <div class="resume-contacts">
+              <a href="mailto:jrkwekub@gmail.com">jrkwekub@gmail.com</a>
+              <span class="resume-sep">•</span>
+              <a href="https://www.linkedin.com/in/jbuadoo/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jbuadoo/</a>
+              <span class="resume-sep">•</span>
+              <a href="https://jbuadoo.github.io/portfolio/" target="_blank" rel="noopener noreferrer">jbuadoo.github.io/portfolio/</a>
+            </div>
+          </header>
+
+          <section class="resume-section">
+            <h2 class="resume-section__title">EDUCATION</h2>
+            <div class="resume-row">
+              <div class="resume-row__left">
+                <strong>Kennesaw State University</strong>
+                <div class="resume-degree">Bachelor of Science in Interactive Design.</div>
+              </div>
+              <div class="resume-row__right">
+                <span>Kennesaw, GA</span>
+                <div class="resume-date">May 2026</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section__title">SKILLS</h2>
+            <ul class="resume-skills-list">
+              <li><strong>Design:</strong> UI Design, Visual Design, Prototyping, User-Centered Design, Design Methods</li>
+              <li><strong>Research:</strong> User Research, Usability Testing</li>
+              <li><strong>Development:</strong> Front-End Development</li>
+              <li><strong>Professional:</strong> Project Management, Leadership, Critical Thinking, Communication</li>
+            </ul>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section__title">EXPERIENCE</h2>
+            
+            <div class="resume-entry">
+              <div class="resume-row">
+                <div class="resume-row__left">
+                  <span class="resume-role">UX Designer</span>
+                  <span class="resume-org">MarthaEDU</span>
+                </div>
+                <div class="resume-row__right">
+                  <span class="resume-date">October 2024 – Present</span>
+                  <span class="resume-loc">Remote</span>
+                </div>
+              </div>
+              <ul class="resume-bullets">
+                <li>Redesigned an existing website to improve overall user experience, usability, clarity, and accessibility.</li>
+                <li>Updated site content and visual design to align with improved UX goals.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-row">
+                <div class="resume-row__left">
+                  <span class="resume-role">UX/UI Designer and Front-End Developer</span>
+                  <span class="resume-org">New Creative Living (NCL)</span>
+                </div>
+                <div class="resume-row__right">
+                  <span class="resume-date">July 2026</span>
+                </div>
+              </div>
+              <ul class="resume-bullets">
+                <li>Designed and developed a real estate website, combining UI design and front-end development to create a clear, user-friendly experience.</li>
+                <li>Applied user-centered design principles to simplify navigation and content for an older user demographic.</li>
+                <li>Incorporated feedback and design input to refine the interface and make key information easier to find.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-row">
+                <div class="resume-row__left">
+                  <span class="resume-role">Project Lead / UX/UI Designer</span>
+                  <span class="resume-org">Tap In</span>
+                </div>
+                <div class="resume-row__right">
+                  <span class="resume-date">May 2026 – Present</span>
+                </div>
+              </div>
+              <ul class="resume-bullets">
+                <li>Lead a team of developers building Tap In, a music discussion and discovery application, serving as the primary and sole UI designer.</li>
+                <li>Contribute to front-end and back-end development, collaborating with developers to translate designs into functional product features.</li>
+                <li>Conduct user interviews and usability testing to identify user needs, uncover usability issues, and guide product decisions.</li>
+                <li>Manage design direction, project priorities, and team collaboration while balancing user needs with technical constraints.</li>
+                <li>Create user flows, interface designs, prototypes, and design systems to support a consistent user experience across the application.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-row">
+                <div class="resume-row__left">
+                  <span class="resume-role">Designer and Editor</span>
+                  <span class="resume-org">Freelance</span>
+                </div>
+                <div class="resume-row__right">
+                  <span class="resume-date">January 2018 – Present</span>
+                </div>
+              </div>
+              <ul class="resume-bullets">
+                <li>Designed digital assets for YouTube creators, including channel banners, thumbnails, and icons.</li>
+                <li>Edited mid-length gaming and commentary videos to improve pacing and viewer engagement.</li>
+                <li>Created song and album cover artwork for artists to visually represent their music.</li>
+                <li>Executed Photoshop-based photo editing and image alteration projects based on client needs.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-row">
+                <div class="resume-row__left">
+                  <span class="resume-role">Church Staff</span>
+                  <span class="resume-org">All Nations Church NW</span>
+                </div>
+                <div class="resume-row__right">
+                  <span class="resume-date">January 2016 – Present</span>
+                  <span class="resume-loc">Kennesaw, GA</span>
+                </div>
+              </div>
+              <ul class="resume-bullets">
+                <li>Produced church media through recording, photography, and editing of sermons and events to support community engagement.</li>
+                <li>Performed drums for church choir performances.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-section">
+            <h2 class="resume-section__title">CERTIFICATIONS</h2>
+            <ul class="resume-cert-list">
+              <li>AutoCAD</li>
+              <li>Revit</li>
+              <li>Citi</li>
+              <li>PMI</li>
+            </ul>
+          </section>
+        </article>
+      </div>
     </section>
 
   </main>
 
+  <div class="start-menu is-hidden" id="start-menu" role="dialog" aria-label="Start Menu">
+    <div class="start-menu__header">
+      <div class="start-menu__avatar">
+        <img src="Icons/About.svg" alt="Joseph Buadoo">
+      </div>
+      <div class="start-menu__user-info">
+        <span class="start-menu__name">Joseph K. Buadoo</span>
+        <span class="start-menu__role">Interactive Designer &amp; Creative Developer</span>
+      </div>
+    </div>
+    <div class="start-menu__body">
+      <div class="start-menu__column start-menu__column--apps">
+        <div class="start-menu__section-title">Programs &amp; Folders</div>
+        <button class="start-menu__item" data-open="projects-folder">
+          <img src="Icons/Folder.svg" alt="" class="start-menu__icon">
+          <div class="start-menu__item-text">
+            <span class="start-menu__item-title">My Projects</span>
+            <span class="start-menu__item-sub">Tap In, Mixr, Reel, CJC, Baratie, Milestone</span>
+          </div>
+        </button>
+        <button class="start-menu__item" data-open="playground-folder">
+          <img src="Icons/Folder.svg" alt="" class="start-menu__icon">
+          <div class="start-menu__item-text">
+            <span class="start-menu__item-title">Playground</span>
+            <span class="start-menu__item-sub">Music Player &amp; interactive features</span>
+          </div>
+        </button>
+        <button class="start-menu__item" data-open="gallery-window">
+          <img src="Icons/Gallery.svg" alt="" class="start-menu__icon">
+          <div class="start-menu__item-text">
+            <span class="start-menu__item-title">Art Gallery</span>
+            <span class="start-menu__item-sub">Drawings, typefaces, and cover art</span>
+          </div>
+        </button>
+        <button class="start-menu__item" data-open="about-window" data-auto-maximize="true">
+          <img src="Icons/About.svg" alt="" class="start-menu__icon">
+          <div class="start-menu__item-text">
+            <span class="start-menu__item-title">About.exe</span>
+            <span class="start-menu__item-sub">Profile, bio, and social feed</span>
+          </div>
+        </button>
+        <button class="start-menu__item" data-open="resume-window">
+          <img src="Icons/Documents.svg" alt="" class="start-menu__icon">
+          <div class="start-menu__item-text">
+            <span class="start-menu__item-title">Resume.doc</span>
+            <span class="start-menu__item-sub">Interactive CV &amp; credentials</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="start-menu__column start-menu__column--places">
+        <div class="start-menu__section-title">Connect</div>
+        <a href="https://www.linkedin.com/in/jbuadoo/" target="_blank" rel="noopener noreferrer" class="start-menu__item">
+          <img src="Icons/Linkedin.svg" alt="" class="start-menu__icon">
+          <span class="start-menu__item-title">LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/jbuadoo" target="_blank" rel="noopener noreferrer" class="start-menu__item">
+          <img src="Icons/GitHub.svg" alt="" class="start-menu__icon">
+          <span class="start-menu__item-title">GitHub Repos</span>
+        </a>
+        <a href="mailto:jrkwekub@gmail.com" class="start-menu__item">
+          <img src="Icons/Documents.svg" alt="" class="start-menu__icon">
+          <span class="start-menu__item-title">Email Joseph</span>
+        </a>
+      </div>
+    </div>
+    <div class="start-menu__footer">
+      <button class="start-menu__action-btn" id="start-menu-show-desktop" type="button" title="Minimize/Restore all open windows">
+        <span>🖥️ Show Desktop</span>
+      </button>
+      <button class="start-menu__action-btn" id="start-menu-toggle-theme" type="button" title="Toggle Night Mode">
+        <span>🌓 Theme Mode</span>
+      </button>
+    </div>
+  </div>
+
   <footer class="taskbar">
-    <button class="start-button" type="button">
-      <img src="start-icon.png" alt="" class="start-button__img">
+    <button class="start-button" id="start-button" type="button" aria-label="Start Menu" aria-expanded="false">
+      <div class="start-button__orb"></div>
       <span>Start</span>
     </button>
     <div class="taskbar__windows" id="taskbar-windows"></div>
-    <div class="system-tray"><div id="clock"></div></div>
+    <div class="system-tray"><div id="clock" class="taskbar__clock"></div></div>
   </footer>
 
 <div class="lightbox-modal is-hidden" id="lightbox-modal">
